@@ -1,14 +1,39 @@
 {
+    "name": "lavary/rest-proxy-manager",
+    "description": "Restful Remote Object Proxies",
+    "type": "library",
+    "keywords": [
+       "ProxyManager",
+       "RESTful proxy",
+       "RESTful Remote Object Proxy",
+       "RESTful ProxyManager Adapter"
+    ],
+    "homepage": "https://github.com/lavary/rest-remote-proxy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reza M. Lavaryan",
+            "email": "mrl.8081@gmail.com"
+         }
+    ],
+    "support": {
+        "email": "mrl.8081@gmail.com",
+        "issues": "https://github.com/lavary/rest-remote-proxy/issues"
+    },
     "require": {
+        "php": ">=5.5",
         "ocramius/proxy-manager": "^1.0",
         "guzzlehttp/guzzle": "^6.2",
-        "silex/silex": "~2.0",
-        "doctrine/common": "^2.6",
-        "zendframework/zend-xmlrpc": "^2.6"
+        "doctrine/common": "^2.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8 || ^5.0"
     },
     "autoload": {
         "psr-4": {
-            "RemoteProxy//": "src/"
+            "RemoteProxy\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
