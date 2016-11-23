@@ -51,12 +51,12 @@ class RestAdapter implements AdapterInterface
     }
 
     /**
-     * Get the service name will be used by the adapter
+     * Compile URL with its values
      *
-     * @param string $wrappedClass
-     * @param string $method
+     * @param string $path
+     * @param array $parameters
      *
-     * @return string Service name
+     * @return string
      */
     protected function compilePath($path, $parameters)
     {
